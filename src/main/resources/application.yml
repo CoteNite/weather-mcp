@@ -9,8 +9,8 @@ spring:
         type: SYNC
         sse-message-endpoint: /mcp/weather
 weather:
-  base-url: ${weather.base-url} # ????url
-  sk: ${weather.sk}             # ???Ed25519?????
-  kid: ${weather.kid}           # ????kid
-  sub: ${weather.sub}           # ????sub
+  base-url: ${weather.base-url} # 你的个人url
+  sk: ${weather.sk}             # 本地的Ed25519密钥的私钥
+  kid: ${weather.kid}           # 文档中的kid
+  sub: ${weather.sub}           # 文档中的sub
 
