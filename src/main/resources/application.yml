@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  ai:
+    mcp:
+      server:
+        name: weather
+        version: 1.0.0
+        type: SYNC
+        sse-message-endpoint: /mcp/weather
+weather:
+  base-url: ${weather.base-url} # ????url
+  sk: ${weather.sk}             # ???Ed25519?????
+  kid: ${weather.kid}           # ????kid
+  sub: ${weather.sub}           # ????sub
+
